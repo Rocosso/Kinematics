@@ -1,0 +1,2 @@
+# Kinematics
+Robotics Dinamixel Kinematics 
