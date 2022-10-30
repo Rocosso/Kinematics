@@ -1,0 +1,65 @@
+#!/bin/bash/
+# para correr este escript de actualizacion solo se debe abrir un git bash
+# y en el ejecutar:
+
+#                sh ./repoUpdateLinux
+
+# si no funciona usar:
+
+#                bash ./repoUpdateLinux
+
+# una vez hecho esto nos aparecera un archivo de nano para ser escrito y guardado,
+# ahi debemos dejar el mensaje del commit y guardar.
+
+# en nano escribimos como lo hacemos normalmente, una vez termine de escribirse el mensaje
+# se oprime:
+
+#              ctrl + x
+
+
+# luego se le dice que si con la letra:
+
+#                 s
+
+# y por ultimo se guarda con enter
+
+# al cerrar nano se realizara la actualizacion del repo paso a paso y dejara en la 
+# terminal el historial explicado de lo que ha hecho
+
+# si se desea usar este script para otros repositorios debe revisarse la rama a la que se desea subir la informacion
+# en el caso de ""ABBRobotAssemblyProcess"" la rama es "master", en el ""proyecto final de robotica 2022"" la rama es "main"
+
+#para revisar la rama usar ""git branch""
+echo " ======================================================"
+echo " =                  reinicializando:                  ="
+echo " ======================================================"
+git init
+
+echo " ======================================================"
+echo " =                  cambios para agregar:             ="
+echo " ======================================================"
+git status
+echo " ======================================================"
+echo " =                  cambios para commit:              ="
+echo " ======================================================"
+git add .
+git status
+echo " ======================================================"
+echo " =                  guarda el commit:                 ="
+echo " ======================================================"
+git commit 
+echo " ======================================================"
+echo " =        actualizando repositorio local:             ="
+echo " ======================================================"
+git pull origin master
+echo " ======================================================"
+echo " =                  subiendo a GitHub:                ="
+echo " ======================================================"
+git push origin master
+echo " ======================================================"
+echo " ======================================================"
+echo " =                                                    ="
+echo " =                      Finalizado!                   ="
+echo " =                                                    ="
+echo " ======================================================"
+echo " ======================================================"
