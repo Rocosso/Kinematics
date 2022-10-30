@@ -21,7 +21,7 @@ Por:
 
 <div>
 <p style = 'text-align:left;'>
-<img src="https://static.generation-robots.com/14801-product_cover/phantomx-pincher-robot-arm-kit-with-ax-12-actuators-and-adapter-for-leo-rover-non-assembled.jpg" alt="PhantomX_Pincher_ax-12" width="250px">
+<img src="https://github.com/Rocosso/Kinematics/blob/main/Fotografias/pincher.jpg" alt="PhantomX_Pincher_ax-12" width="250px">
 </p>
 </div>
 
@@ -50,3 +50,19 @@ Los parametros de DH-standard para el robot:
 | 3	| 0	| L3	| 0	| q3	| 0 | 
 | 4	| 0	| L4	| 0	| q4	| 0 | 
 
+# Cinematica Inversa:
+
+![distribucion de los Ejes del robot Phantomx pincher AX-12](https://github.com/Rocosso/Kinematics/blob/main/Fotografias/pincher_Axis.jpg)
+
+
+## primera articulación (Waist)
+
+## segunda articulación ()
+
+## tercera articulación
+
+## cuarta
+
+## Espacios de trabajo
+
+![Volumen de trabajod e robot PantomX AX-12 pincher ](https://github.com/Rocosso/Kinematics/blob/main/Fotografias/espacios%20de%20trabajo%20ampliado.png)
