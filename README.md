@@ -54,11 +54,15 @@ Los parametros de DH-standard para el robot:
 
 ![distribucion de los Ejes del robot Phantomx pincher AX-12](https://github.com/Rocosso/Kinematics/blob/main/Fotografias/pincher_Axis.jpg)
 
-## primera articulación (Waist)
+## Primera articulación (Waist)
+
+A partir de la siguiente gráfica, realizamos el análisis de las articulaciones.
+
+
 
 $$ q_1 = atan(y_T / x_T) \rightarrow  atan2(y_T, xT)$$
 
-## segunda articulación (Shoulder)
+## Segunda articulación (Shoulder)
 
 Por análisis de mecanismo 2R: <br>
 
@@ -66,13 +70,13 @@ $$ \theta_3 = acos(\frac{r^2+h^2-l_2^2-l_3^2}{2 l_3 l_3}) $$
 
 $$ q_2 = -\pi/2 + atan2(h,r) - atan2(l_3 sin(\theta_3),l_2+l_3*cos(\theta_3)) $$
 
-## tercera articulación (Elbow)
+## Tercera articulación (Elbow)
 
 $$ q_3 = \theta_3 $$
 
 Nota: Para cambiar los valores de las articulaciones de q_2 y q_3 para las cofiguraciones de codo arriba o codo abajo únicamente hay que cambiar a theta3 de signo
 
-## cuarta articulación (Wrist)
+## Cuarta articulación (Wrist)
 
 $$ R_{pitch} = \begin{bmatrix} cos(q_1) & sin(q_1) & 0 \newline -sin(q_1) & cos(q_1) & 0 \newline 0 & 0 & 1 \end{bmatrix}  R_T$$
 
@@ -83,5 +87,7 @@ $$ q_4 = pitch - q_2 - q_3 $$
 Se realizó la implementación de esta cinemática inversa en una función de Matlab que se puede ver en el directorio src/getInvKin.py
 
 ## Espacios de trabajo
+
+
 
 ![Volumen de trabajod e robot PantomX AX-12 pincher ](https://github.com/Rocosso/Kinematics/blob/main/Fotografias/espacios%20de%20trabajo%20ampliado.png)
