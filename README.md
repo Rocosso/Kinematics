@@ -88,6 +88,11 @@ Se realizó la implementación de esta cinemática inversa en una función de Ma
 
 ## Espacios de trabajo
 
-
-
 ![Volumen de trabajod e robot PantomX AX-12 pincher ](https://github.com/Rocosso/Kinematics/blob/main/Fotografias/espacios%20de%20trabajo%20ampliado.png)
+
+Se realiza un diagrama geométrico con los datos medidos del robot físico, se determina el espacio de trabajo del motor en el plano XZ del origen, considerando que es el plano que más variaciones tiene, especialmente si se considera que el plano XY es un circulo competo debido a la acción rotacional del primer actuador, y el espacio de trabajo en el plano YZ es muy similar al plano de trabajo en el Plano XZ solo que con menos restricciones.
+
+Se entiende que esto forma una geometría semiesférica con un vacío interno, definido por la interferencia que realiza el robot consigo mismo.
+De forma detallada se toma el modelo geométrico de cada eslabón, incluyendo la base del robot y se realizan los movimientos angulares máximos posibles para cada rotación, buscando los limites en los cuales el robot comienza a generar interferencia consigo mismo o con la base, o los puntos en los cuales el actuador llega a su máximo.
+
+En la imagen se puede evidenciar que cuando una articulación llega a su límite ya sea del motor o por interferencia, la siguiente articulación puede continuar en la misma dirección hasta que esta se vea limitada.
