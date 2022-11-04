@@ -58,7 +58,7 @@ Los parametros de DH-standard para el robot:
 
 A partir de la siguiente gráfica, realizamos el análisis de las articulaciones.
 
-
+![Planteamiento](https://github.com/Rocosso/Kinematics/blob/main/Fotografias/Phantom_KinInv.jpg)
 
 $$ q_1 = atan(y_T / x_T) \rightarrow  atan2(y_T, xT)$$
 
