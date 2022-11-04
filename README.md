@@ -69,6 +69,7 @@ $$ q_2 = -\pi/2 + atan2(h,r) - atan2(l_3 sin(\theta_3),l_2+l_3*cos(\theta_3)) $$
 ## tercera articulación (Elbow)
 
 $$ q_3 = \theta_3 $$
+
 Nota: Para cambiar los valores de las articulaciones de q_2 y q_3 para las cofiguraciones de codo arriba o codo abajo únicamente hay que cambiar a theta3 de signo
 
 ## cuarta articulación (Wrist)
@@ -79,7 +80,7 @@ $$ pitch = atan2(R_{p31},R_{p11}) $$
 
 $$ q_4 = pitch - q_2 - q_3 $$
 
-Se realizó la implementación de esta cinemática inversa en una función de Matlab que se puede ver en el directorio px_robot/matlab/invKinPhantomX.m
+Se realizó la implementación de esta cinemática inversa en una función de Matlab que se puede ver en el directorio src/getInvKin.py
 
 ## Espacios de trabajo
 
