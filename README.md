@@ -84,7 +84,7 @@ $$ pitch = atan2(R_{p31},R_{p11}) $$
 
 $$ q_4 = pitch - q_2 - q_3 $$
 
-Se realizó la implementación de esta cinemática inversa en una función de Matlab que se puede ver en el directorio src/getInvKin.py
+Se realizó la implementación de esta cinemática inversa en una función de Matlab que se puede ver en el directorio src/getInvKin.py al igual que en src/invKinPhantom.m.
 
 ## Espacios de trabajo
 
