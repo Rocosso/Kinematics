@@ -54,11 +54,11 @@ Los parametros de DH-standard para el robot:
 
 ![distribucion de los Ejes del robot Phantomx pincher AX-12](https://github.com/Rocosso/Kinematics/blob/main/Fotografias/pincher_Axis.jpg)
 
+<img src="https://github.com/Rocosso/Kinematics/blob/main/Fotografias/Phantom_KinInv.jpg" alt="Gráfica Cinemática inversa" width="500">
+
 ## Primera articulación (Waist)
 
-A partir de la siguiente gráfica, realizamos el análisis de las articulaciones.
-
-<img src="https://github.com/Rocosso/Kinematics/blob/main/Fotografias/Phantom_KinInv.jpg" alt="Gráfica Cinemática inversa" width="500">
+A partir de la anterior gráfica, realizamos el análisis de las articulaciones.
 
 $$ q_1 = atan(y_T / x_T) \rightarrow  atan2(y_T, xT)$$
 
